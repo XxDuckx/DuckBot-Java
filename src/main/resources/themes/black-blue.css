@@ -1,0 +1,46 @@
+.root {
+    -fx-font-family: "Segoe UI", "Roboto", sans-serif;
+    -fx-base: #0B0C10;
+    -fx-background-color: #0B0C10;
+    -fx-text-fill: #00BFFF;
+}
+
+.button, .toggle-button {
+    -fx-background-color: #11141A;
+    -fx-text-fill: #00BFFF;
+    -fx-border-color: #20C4FF;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.button:hover, .toggle-button:hover {
+    -fx-background-color: #0F1218;
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color: #11141A;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #0F1218;
+    -fx-text-base-color: #00BFFF;
+}
+
+.list-view, .table-view, .text-field, .combo-box {
+    -fx-background-color: #11141A;
+    -fx-control-inner-background: #11141A;
+    -fx-text-fill: #00BFFF;
+    -fx-border-color: #20C4FF;
+}
+
+.label {
+    -fx-text-fill: #7FAEDC;
+}
+
+.status-success {
+    -fx-text-fill: #40E0D0;
+}
+
+.status-error {
+    -fx-text-fill: #FF4D6D;
+}
