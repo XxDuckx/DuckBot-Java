@@ -57,7 +57,3 @@ mvn javafx:run
 ```
 
 Or double-click: `run.bat` (Windows)
-
-### Login
-- **Username:** Duck
-- **Password:** Aedyn2013
