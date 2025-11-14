@@ -47,6 +47,16 @@ public final class FileBotService implements BotService {
         return loadAll().stream().filter(bot -> bot.id.equals(id)).findFirst();
     }
 
+    @Override
+    public void delete(BotProfile bot) {
+        String filename = sanitize(bot.name == null ? bot.id : bot.name) + ".json";
+        Path path = DataPaths.botsDir().resolve(filename);
+        try {
+            Files.deleteIfExists(path);
+        } catch (IOException ignored) {
+        }
+    }
+
     private static String sanitize(String name) {
         return name == null ? "bot" : name.toLowerCase(Locale.ROOT).replaceAll("[^a-z0-9-_]", "_");
     }

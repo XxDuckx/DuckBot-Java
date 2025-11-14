@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven 3.8.1
+Built-By: Roma
+Build-Jdk: 17.0.10
+Main-Class: com.lssbot.core.Bootstrap
+

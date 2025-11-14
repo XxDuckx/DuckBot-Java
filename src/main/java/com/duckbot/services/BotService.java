@@ -15,4 +15,9 @@ public interface BotService {
     List<BotProfile> loadAll();
 
     Optional<BotProfile> find(String id);
+
+    /**
+     * Delete a bot profile.
+     */
+    void delete(BotProfile bot);
 }

@@ -8,6 +8,7 @@ import java.util.Objects;
 public final class Config {
 
     public String authMode = "local";
+    public String apiBaseUrl = "https://api.duckbot.com";
     public String ldplayer5Path = "C:/LDPlayer4.0/LDPlayer";
     public String ldplayer9Path = "C:/LDPlayer9";
     public String theme = "black-blue";

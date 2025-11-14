@@ -42,10 +42,22 @@ A shaded JAR with the entry point `com.duckbot.app.DuckBotApp` will be produced 
 
 ## Running
 
-Ensure you are using JDK 17 or later and execute the shaded artifact:
+### Windows Installer (Recommended)
+1. **Run as Administrator:**
+   - `setup-windows.bat` (right-click → Run as administrator)
+   - Or: `Install-DuckBot.ps1` (run in PowerShell as Administrator)
+
+2. **Done!** Shortcuts will appear on Desktop and Start Menu
+
+### Run from Source (Development)
+Prerequisites: Java 17+ and Maven
 
 ```
-java -jar target/duckbot-java-0.1.0-SNAPSHOT-shaded.jar
+mvn javafx:run
 ```
 
-On first launch you will be prompted to create an admin account. All runtime files are created under the `data/` directory.
+Or double-click: `run.bat` (Windows)
+
+### Login
+- **Username:** Duck
+- **Password:** Aedyn2013

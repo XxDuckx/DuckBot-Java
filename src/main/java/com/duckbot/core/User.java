@@ -10,6 +10,7 @@ public final class User {
 
     public String username;
     public String role = "USER";
+    public UserTier tier = UserTier.FREE;  // Default to FREE tier
     public Instant createdUtc = Instant.now();
 
     public User() {
@@ -18,6 +19,14 @@ public final class User {
     public User(String username, String role, Instant createdUtc) {
         this.username = username;
         this.role = role;
+        this.tier = UserTier.FREE;
+        this.createdUtc = createdUtc;
+    }
+
+    public User(String username, String role, UserTier tier, Instant createdUtc) {
+        this.username = username;
+        this.role = role;
+        this.tier = tier;
         this.createdUtc = createdUtc;
     }
 

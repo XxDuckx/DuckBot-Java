@@ -13,6 +13,12 @@ public final class ScriptVariable {
     public String prompt;
     public Object defaultValue;
     public List<Object> options = new ArrayList<>();
+    // New, optional UI metadata for dynamic forms
+    public String type; // text, number, boolean, select, multiselect, weekdays
+    public Double min;
+    public Double max;
+    public Double step;
+    public String section; // grouping label
 
     public ScriptVariable() {
     }
@@ -24,6 +30,11 @@ public final class ScriptVariable {
                 ", prompt='" + prompt + '\'' +
                 ", defaultValue=" + defaultValue +
                 ", options=" + options +
+                ", type='" + type + '\'' +
+                ", min=" + min +
+                ", max=" + max +
+                ", step=" + step +
+                ", section='" + section + '\'' +
                 '}';
     }
 
@@ -36,6 +47,6 @@ public final class ScriptVariable {
 
     @Override
     public int hashCode() {
-        return Objects.hash(key, prompt, defaultValue, options);
+        return Objects.hash(key, prompt, defaultValue, options, type, min, max, step, section);
     }
 }
